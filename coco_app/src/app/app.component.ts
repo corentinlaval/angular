@@ -5,11 +5,13 @@ import {OrdiComponent} from "./ordi/ordi.component";
 import {CounterComponent} from "./counter/counter.component";
 import {UserComponent} from "./user/user.component";
 import {ConsoleLogger} from "@angular/compiler-cli";
+import {ProductdetailComponent} from "./productdetail/productdetail.component";
+import {ProductlistComponent} from "./productlist/productlist.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports : [MessageComponent, OrdiComponent, CounterComponent, UserComponent],
+  imports : [MessageComponent, OrdiComponent, CounterComponent, UserComponent, ProductdetailComponent, ProductlistComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
