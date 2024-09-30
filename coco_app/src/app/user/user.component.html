@@ -1,0 +1,14 @@
+<h1>{{firstName}}</h1>
+
+<div *ngIf="isAdmin; else notAdmin">
+  This is an Admin
+</div>
+<ng-template #notAdmin>
+  <div>This is not an Admin</div>
+</ng-template>
+
+<button (click)=Switch_role()>Switch</button>
+
+<div *ngFor="let skill of skills"><ul>{{skill}}</ul></div>
+
+

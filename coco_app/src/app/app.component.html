@@ -1,0 +1,14 @@
+<h1>Hello, {{ title }}</h1>
+<h2>C'est {{ user }}</h2>
+<p>Congratulations! Your app is running. 🎉</p>
+<!--<app-message></app-message>-->
+<!--<app-message></app-message>
+<app-message></app-message>
+<app-ordi></app-ordi>-->
+<app-counter name="Premier" [initialValue]="1" [incrementValue]="20" (incrementCountEvent)="logCountMessages($event)"></app-counter>
+<app-counter name="2" [initialValue]="1" [incrementValue]="20" [decrementValue]="20" (incrementCountEvent)="logCountMessages($event)"></app-counter>
+<app-counter name="3" [incrementValue]="20" (incrementCountEvent)="logCountMessages($event)"></app-counter>
+<app-counter name="4" (incrementCountEvent)="logCountMessages($event)"></app-counter>
+
+<!--<app-user></app-user>-->
+
